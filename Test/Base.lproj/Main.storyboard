@@ -3,6 +3,7 @@
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,25 +24,65 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="введите фамилию" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9II-gb-ndP">
+                                <rect key="frame" x="106" y="394" width="163" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="163" id="tA6-Jt-KX4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6m-X0-Rap">
+                                <rect key="frame" x="134.33333333333334" y="464" width="106.66666666666666" height="31"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="продолжить"/>
+                                <connections>
+                                    <action selector="buttonNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J7O-L3-R6f"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="введите имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vhg-Di-iz9">
+                                <rect key="frame" x="106" y="352" width="163" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="163" id="uPq-QZ-EfH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="X6m-X0-Rap" firstAttribute="top" secondItem="9II-gb-ndP" secondAttribute="bottom" constant="36" id="5Kb-Ga-bEY"/>
+                            <constraint firstItem="9II-gb-ndP" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ARD-VV-sNZ"/>
                             <constraint firstItem="Llo-ls-zI5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="TZT-U2-X0z"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Llo-ls-zI5" secondAttribute="trailing" constant="100" id="XZF-je-Awb"/>
+                            <constraint firstItem="9II-gb-ndP" firstAttribute="top" secondItem="vhg-Di-iz9" secondAttribute="bottom" constant="8" symbolic="YES" id="Xy2-2W-yDh"/>
+                            <constraint firstItem="vhg-Di-iz9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gzj-UH-Bzm"/>
+                            <constraint firstItem="X6m-X0-Rap" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kMo-c0-ib2"/>
                             <constraint firstItem="Llo-ls-zI5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="qMg-UW-JcM"/>
+                            <constraint firstItem="9II-gb-ndP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tpk-M9-xXj"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="label" destination="Llo-ls-zI5" id="cy6-nu-tvw"/>
+                        <outlet property="secondNameTextField" destination="vhg-Di-iz9" id="uNG-7T-h6d"/>
+                        <outlet property="userNameTextField" destination="9II-gb-ndP" id="lUy-nd-koh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
+            <point key="canvasLocation" x="18.399999999999999" y="83.497536945812811"/>
         </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
