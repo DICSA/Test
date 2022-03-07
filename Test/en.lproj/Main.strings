@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "1ff-X2-bOD"; */
+"1ff-X2-bOD.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Фамилия"; ObjectID = "8EJ-xW-O07"; */
+"8EJ-xW-O07.placeholder" = "Фамилия";
+
+/* Class = "UITextField"; placeholder = "Имя"; ObjectID = "vB0-oZ-G0H"; */
+"vB0-oZ-G0H.placeholder" = "Имя";
+
+/* Class = "UIButton"; configuration.title = "Войти"; ObjectID = "w5H-go-Up5"; */
+"w5H-go-Up5.configuration.title" = "Войти";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "w5H-go-Up5"; */
+"w5H-go-Up5.normalTitle" = "Button";
